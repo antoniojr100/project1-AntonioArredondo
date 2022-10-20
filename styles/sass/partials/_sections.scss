@@ -1,0 +1,14 @@
+@use "./variables";
+
+
+
+
+
+
+// Footer (for all)
+
+footer{
+    background-color: variables.$black;
+    padding: 1% 0;
+    text-align: center;
+}
