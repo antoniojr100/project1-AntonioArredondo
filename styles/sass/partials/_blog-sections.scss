@@ -1,0 +1,31 @@
+@use "./variables";
+
+main{
+    background-color: variables.$light-sky-blue;
+    .blog-left-right{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .blog-left{
+            width: 70%;
+            .blog-main-image-container{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .blog-right{
+            width: 25%;
+            background-color: variables.$dark-green;
+            position: absolute;
+            right: 0%;
+            top: 90%;
+        }
+    }
+}
+
+.our-new-collection{
+    background-color: variables.$dark-green;
+}
+

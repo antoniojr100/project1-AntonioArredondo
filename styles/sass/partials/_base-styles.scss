@@ -9,6 +9,7 @@ html{
     margin: 0 auto;
 }
 
+ul,
 header ul{
     list-style-type: none;
     li a{
@@ -16,8 +17,37 @@ header ul{
     }
 }
 
-// .a-button{}
 
-footer p{
-    color: variables.$white;
+
+.a-button{
+    border: 1px solid red;
+    text-decoration: none;
+    border: none;
+    width: 25%;
+    padding: 1% 5%;
+    p{
+        margin: 0;
+        &:visited{
+            text-decoration: none;
+            border: none;
+        }
+    }
+}
+
+.buttons{
+    text-decoration: none;
+    border: none;
+    &:visited{
+        text-decoration: none;
+        border: none;
+    }
+}
+
+footer{
+    background-color: variables.$black;
+    padding: 1% 0;
+    text-align: center;
+    p{
+        color: variables.$white;
+    }
 }

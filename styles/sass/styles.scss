@@ -4,4 +4,7 @@
 @use "./partials/base-styles";
 
 @use "./partials/header";
-@use "./partials/sections";
+
+@use "./partials/home-sections";
+@use "./partials/blog-sections";
+@use "./partials/contact-sections";

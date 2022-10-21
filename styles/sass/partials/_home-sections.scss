@@ -1,0 +1,128 @@
+@use "./variables";
+
+// TECHNIQUES
+.home-techniques{
+    background-color: variables.$light-sky-blue;
+    padding: 10% 0 5% 0;
+
+    // OVERFLOW IMG
+    .home-overflow-image-container{
+        img{
+            position: absolute;
+            top: 45%;
+        }
+    }
+
+    .techniques-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .techniques-content{ 
+            display: flex;
+            flex-direction: column;
+            width: 75%;
+            h2{
+                margin: 0;
+                text-align: left; 
+            }
+            .a-button{
+                border: none;
+                background-color: variables.$dark-slate-blue;
+            }
+        }
+
+        .techniques-image-container{
+            width: 20%;
+            img{
+                width: 100%;
+                box-shadow: -15px 20px variables.$turquoise;
+            }
+        }
+    }
+}
+
+// GALLERY
+.home-gallery{
+    margin: 0;
+    padding: 5% 0;
+    background-color: variables.$dark-green;
+    .home-gallery-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .home-gallery-image-container{
+            padding: 0 1%;
+            width: calc((100% / 3) - 1%);
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+// ABOUT
+.home-light-blue{
+    background-color: variables.$light-sky-blue;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .item{
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid red;
+        .home-font-awesome-container{
+            width: 10%;
+            height: 10%;
+            border: 1px solid blue;
+            // display: flex;
+            // align-items: center;
+            padding-top: 10%;
+            i{
+                width: 100%;
+                background-color: variables.$turquoise;
+                color: variables.$white;
+                border-radius: 50%;
+            }
+        }
+        .home-about{
+            border: 1px solid green;
+            width: 90%;
+            h2{
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+// DISCOVER
+.home-turquoise{
+    background-color: variables.$dark-green;
+}
+
+// BANNER
+.home-banner{
+    height: 75vh;
+    background-image: url('../assets/banner.jpg');
+    background-size: cover;
+}
+
+
+// SEARCH
+.home-search{
+    background-color: variables.$light-sky-blue;
+    align-content: center;
+    padding: 10% 0;
+    h2,
+    p,
+    a{
+        text-align: center;
+    }
+    .buttons{
+        background-color: variables.$dark-slate-blue;
+        width: 20%;
+        margin: 0 auto;
+        padding: 1% 0;
+    }
+}
