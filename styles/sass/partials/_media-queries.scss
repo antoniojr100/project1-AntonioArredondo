@@ -1,10 +1,191 @@
-// HOME
+// HEIGHT
 
-    @media (max-height: 850px){
-        .home-techniques{
-            padding-top: 15%;
+@media (max-height: 850px){
+    .home-techniques{
+        padding-top: 15%;
+    }
+}
+
+@media (max-height: 550px){
+    // HOME
+    .home-techniques{
+        padding-top: 35%;
+    
+        // OVERFLOW IMG
+        .home-overflow-image-container{
+            img{
+                top: 65%;
+            }
         }
     }
+
+    .home-discover{
+        .discover-top{
+            .home-top-right{
+                margin-top: 0;
+                h3{
+                    margin-top: 0;
+                }
+                .buttons{
+                    width: 35%;
+                }
+            }
+        }
+
+        .discover-bottom{
+            .home-bottom-left{
+                .buttons{
+                    margin-left: 65%;
+                    width: 35%;
+                }
+            }
+            .home-bottom-right{
+                img{
+                    margin-bottom: -70%;
+                }
+            }
+        }
+    }
+
+    // CONTACT
+    .form-containers{
+        margin-top: -10%;
+    }
+}
+
+
+// WIDTH
+@media (max-width: 1500px){
+    // HOME
+    .home-discover{
+
+        .discover-text-container{
+            .buttons{
+                width: 35%;
+            }
+        }
+
+        .discover-top{
+            .home-top-right{
+                h3{
+                    margin-top: -15%;
+                }
+            }
+        }
+
+        .discover-bottom{
+            .home-bottom-left .buttons{
+                margin-left: 65%;
+            }
+
+            // .home-bottom-right img{
+            //     margin-bottom: -20%;
+            // }
+        }
+    }
+}
+
+
+@media (max-width: 1300px){
+    //HOME
+    .home-about h2{
+        text-align: center;
+    }
+
+    .home-discover{
+        .home-bottom-right img{
+            margin-top: 20%;
+        }
+    }
+}
+
+
+@media (max-width: 1200px){
+    .nav-bar ul{
+        margin-right: 10%;
+        border: 1px solid blue;
+        li{
+            margin-right: 10%;
+            border: 1px solid red;
+        }
+    }
+}
+
+@media (max-width: 1100px){
+    // HOME
+    .home-discover{
+        .home-bottom-right img{
+            margin-top: 40%;
+        }
+    }
+
+    // BLOG
+    main{
+        .blog-left-right{
+            .blog-right{
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px){
+
+    // HOME
+    .home-techniques{
+        padding-top: 20%;
+    }
+
+    .home-discover{
+        .home-top-right p,
+        .home-top-right h3{
+            margin: 1%;
+        }
+        .home-bottom-left p,
+        .home-bottom-left h3{
+            margin: 1%;
+        }
+    }
+
+
+    // BLOG
+    main .blog-left-right{
+        flex-direction: column;
+        .blog-right{
+            position: relative;
+            width: 100%;
+            margin: 20% 0;
+            // top: 160%;
+        }
+        .blog-left{
+            width: 100%;
+        }
+    }
+
+    // CONTACT
+    .content-container{
+        flex-direction: column;
+        align-items: center;
+
+        .form-container{
+            width: 100%;
+        }
+
+        .extra-info{
+            .extra-info-top{
+                ul{
+                    justify-content: center;
+                }
+                p{
+                    text-align: center;
+                }
+            }
+            .extra-info-bottom{
+                text-align: center;
+            }
+        }
+    }
+}
 
     // @media (max-width: 1600px){
         // nav --> hamburger menu icon
