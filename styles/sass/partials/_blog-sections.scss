@@ -1,31 +1,127 @@
 @use "./variables";
 
 main{
-    background-color: variables.$light-sky-blue;
     .blog-left-right{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
+        // LEFT:
         .blog-left{
-            width: 70%;
+            width: 60%;
             .blog-main-image-container{
-                width: 100%;
+                border: 1px solid orange;
                 img{
-                    width: 100%;
+                    margin-left: -15.5%;
+                    margin-top: -15%;
+                    width: 115%;
+                    box-shadow: 20px 20px variables.$turquoise;
                 }
             }
+            .our-new-collection{
+                background-color: variables.$dark-green;
+                box-shadow: 10px 10px variables.$turquoise;
+                padding: 5% 5% 5% 15%;
+                margin-left: -20%;
+                margin-top: -1%;
+            }
         }
+
+        // RIGHT:
         .blog-right{
-            width: 25%;
+            width: 20%;
             background-color: variables.$dark-green;
             position: absolute;
             right: 0%;
-            top: 90%;
+            top: 85%;
+            .blog-aside-image-container{
+                img{
+                    width: 100%;
+                    padding-left: 4%;
+                    margin-top: -5%;
+                }
+            }
+
+            .our-mission,
+            .recent-posts{
+                width: 75%;
+                padding: 1% 0 1% 5%;
+                h4{
+                    margin-bottom: 0;
+                }
+            }
+            .recent-posts{
+                ul{
+                    list-style-type:disc;
+                    list-style-position: inside;
+                    padding-left: 0;
+                }
+            }
         }
     }
 }
 
-.our-new-collection{
-    background-color: variables.$dark-green;
+
+
+.comments{
+    padding: 5% 2%;
+    .comment-1,
+    .comment-2{
+        display: flex;
+        .comment-text{
+            padding: 0 2%;
+            p{
+                padding: 0;
+            }
+        }
+
+        .comment-image{
+            padding-top: 2%;
+        }
+    }
 }
 
+.comment-form{
+    margin: 5% 0;
+    
+    .blog-comment-top-row{
+        display: flex;
+        justify-content: space-between;
+    }
+    input{
+        width: 49%;
+        border: none;
+        border-bottom: 1px solid variables.$turquoise;
+        margin-bottom: 2%;
+        padding: 0 0 2% 2%;
+    }
+    textarea{
+        width: 100%;
+        margin: 2% 0;
+        padding: 2% 0 0 2%;
+        border: 1px solid variables.$turquoise;
+        resize: none;
+    }
+    
+    input,
+    textarea{
+        background-color: variables.$light-sky-blue;
+    }
+
+    input:active,
+    input:focus,
+    textarea:active,
+    textarea:focus{
+        outline-style: none;
+    }
+
+
+    button{
+        margin: 1% 0;
+        padding: 1% 0;
+        width: 100%;
+        background-color: variables.$dark-slate-blue;
+        cursor: pointer;
+    }
+
+}

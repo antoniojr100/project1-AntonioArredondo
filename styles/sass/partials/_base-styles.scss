@@ -17,6 +17,9 @@ header ul{
     }
 }
 
+.blog-body{
+    background-color: variables.$light-sky-blue;
+}
 
 
 .a-button{
@@ -50,4 +53,8 @@ footer{
     p{
         color: variables.$white;
     }
+    // .blog-footer{
+    //     position: fixed;
+    //     bottom: 0;
+    // }
 }

@@ -28,7 +28,7 @@
         </div>
 
     </header>
-    <main>
+    <main class="blog-body">
         <div class="blog-left-right">
             <div class="wrapper">
                 <section class="blog-left">
@@ -50,23 +50,23 @@
                     <!-- MAIN TEXT ENDS -->
                     <!-- COMMENTS BEGIN -->
                     <div class="comments black-text">
-                        <h4 class="comments-heading">Comments</h4>
+                        <h4 class="comments-heading">Comments:</h4>
                         <div class="comment-1">
-                            <div class="user-1-image-container">
+                            <div class="user-1-image-container  comment-image">
                                 <img src="./assets/comment-1.jpg" alt="Profile picture for user 1">
                             </div>
 
-                            <div class="user-1-comment-text">
+                            <div class="user-1-comment-text comment-text">
                                 <p class="date-text blue-text">Tuesday December 9th, 2019 by Louise</p>
                                 <p class="body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis provident nisi temporibus laborum quidem rem autem repellendus quibusdam possimus quaerat voluptatum odit odio, dolore voluptas animi culpa laboriosam fugit amet iure veniam?</p>
                             </div>
                         </div>
                         <div class="comment-2">
-                            <div class="user-2-image-container">
+                            <div class="user-2-image-container comment-image">
                                 <img src="./assets/comment-2.jpg" alt="Profile picture for user 2">
                             </div>
                             
-                            <div class="user-2-comment-text">
+                            <div class="user-2-comment-text  comment-text">
                                 <p class="date-text blue-text">Wednesday December 10th, 2019 by JP</p>
                                 <p class="body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consectetur, provident ducimus repellendus quibusdam nam veritatis qui architecto?</p>
                             </div>
@@ -75,10 +75,12 @@
                     <!-- COMMENTS END -->
                     <!-- FORM BEGINS -->
                     <div class="comment-form">
-                        <input type="text" class="body-text blue-text" placeholder="Name" id="name" required>
-                        <input type="text" class="body-text blue-text" placeholder="Email" id="email" required>
-                        <textarea name="comment" class="body-text blue-text" id="comment-textarea" placeholder="Comment" required cols="30" rows="10"></textarea>
-                        <button class="buttons white-text">post comment</button>
+                        <div class="blog-comment-top-row">
+                            <input type="text" class="body-text black-text" placeholder="Name" id="blog-name" required>
+                            <input type="text" class="body-text black-text" placeholder="Email" id="blog-email" required>
+                        </div>
+                        <textarea name="comment" class="body-text black-text" id="blog-comment-textarea" placeholder="Comment" required cols="30" rows="10"></textarea>
+                        <button class="buttons white-text" id="blog-post-comment" type="submit">post comment</button>
                     </div>
                     <!-- FORM ENDS -->
 
@@ -108,7 +110,7 @@
         </div>
     </main>
     <footer>
-        <div class="wrapper">
+        <div class="wrapper blog-footer">
             <p class="body-text">Copyright &copy; 2022 Juno College</p>
         </div>
     </footer>
