@@ -316,6 +316,7 @@
     header{
         .nav-bar{
             flex-direction: column;
+            text-align: center;
             .logo{
                 margin: 0 auto;
                 padding: 10% 0;
@@ -325,6 +326,7 @@
                 flex-direction: column;
                 justify-content: center;
                 margin: 0 auto;
+                text-align: center;
                 li{
                     text-align: center;
                     padding: 5% 0;
