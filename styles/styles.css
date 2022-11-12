@@ -520,6 +520,8 @@ header h1 {
   background-color: #21404F;
 }
 .home-gallery .home-gallery-container {
+  padding: 0;
+  margin: 0 auto;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -527,6 +529,9 @@ header h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border: 1px solid peachpuff;
 }
 .home-gallery .home-gallery-container .home-gallery-image-container {
   padding: 0 1%;

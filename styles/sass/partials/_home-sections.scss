@@ -47,9 +47,13 @@
     padding: 5% 0;
     background-color: variables.$dark-green;
     .home-gallery-container{
+        padding: 0;
+        margin: 0 auto;
         width: 100%;
         display: flex;
         justify-content: space-between;
+        align-content: center;
+        border: 1px solid peachpuff;
         .home-gallery-image-container{
             padding: 0 1%;
             width: calc((100% / 3) - 1%);
