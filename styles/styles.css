@@ -956,6 +956,13 @@ main .content-container {
   }
 }
 @media (max-width: 1200px) {
+  .home-techniques {
+    padding-top: 20%;
+  }
+  .home-techniques .home-overflow-image-container img {
+    top: 50%;
+    width: 70%;
+  }
   .nav-bar ul {
     margin-right: 10%;
   }
@@ -964,6 +971,13 @@ main .content-container {
   }
 }
 @media (max-width: 1100px) {
+  .home-techniques {
+    padding-top: 17%;
+  }
+  .home-techniques .home-overflow-image-container img {
+    top: 50%;
+    width: 70%;
+  }
   .home-discover .home-bottom-right img {
     margin-top: 40%;
   }
@@ -974,6 +988,9 @@ main .content-container {
 @media (max-width: 1000px) {
   .home-techniques {
     padding-top: 20%;
+  }
+  .home-techniques .home-overflow-image-container img {
+    top: 70%;
   }
   .home-discover .home-top-right p,
 .home-discover .home-top-right h3 {
